@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>游戏启动器</title>
+    <style>
+        body { margin: 0; padding: 20px; font-family: Arial, sans-serif; }
+        #game-container { width: 100%; height: 800px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h1>游戏启动器</h1>
+    <div id="/mc-ky/1.21.11.jar">
+    </div>
+
+    <script>
+        // 游戏启动逻辑预留位置
+        function launchGame() {{
+            "arguments": {
+                "game": [
+                    "--username", "${auth_player_name}",
+                    "--version", "${version_name}",
+                    "--gameDir", "${game_directory}",
+                    "--assetsDir", "${assets_root}",
+                    "--assetIndex", "${assets_index_name}",
+                    "--uuid", "${auth_uuid}",
+                    "--accessToken", "${auth_access_token}",
+                    "--clientId", "${clientid}",
+                    "--xuid", "${auth_xuid}",
+                    "--userType", "${user_type}",
+                    "--versionType", "${version_type}",
+                    "--width", "${resolution_width}",
+                    "--height", "${resolution_height}"
+                ]
+            },
+            "mainClass": "net.minecraft.client.main.Main",
+            "javaVersion": {"majorVersion": 21},
+            "downloads": {
+                "client": {"size": 26836906}
+            },
+            "id": "1.21.1",
+            "type": "release"
+        };
+            { 
+            font-family: 'Courier New', monospace; 
+            background: #0a0a0a; 
+            color: #00ff00; 
+            margin: 0; 
+            padding: 20px; 
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #1a1a1a; 
+            padding: 20px; 
+            border: 1px solid #00ff00; 
+        }
+        .btn { 
+            background: #006600; 
+            color: white; 
+            border: 1px solid #00ff00; 
+            padding: 10px 20px; 
+            margin: 5px; 
+            cursor: pointer; 
+        }
+        #status { 
+            margin-top: 20px; 
+            padding: 10px; 
+            background: #2a2a2a; 
+            border-left: 3px solid #00ff00; 
+        }
+        }
+    </script>
+</body>
+</html>
